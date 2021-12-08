@@ -1,0 +1,18 @@
+<%- include("partials/header")-%> 
+
+<h1>Home </h1>
+<p><%= lorumispam %> </p>
+<% posts.forEach(function(element){ %>
+   <% if(element!=null) {%>
+    <h1 style="font-size: 3rem;"><%= element.title %></h1>
+    <p> <%=element.message+"..." %>  <span  style="color: darkblue;"><a href="posts/<%=element._id%> "> Read More </a> </span></p>
+   <% } %> 
+    <% }); %> 
+
+
+<%- include("partials/footer") -%> 
+
+
+
+
+
